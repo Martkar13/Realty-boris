@@ -1,5 +1,35 @@
 /* Commenting In CSS */
 /* Default styles */
 * {
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0e7e7;
+    color: #333;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-size: 1.5rem;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
