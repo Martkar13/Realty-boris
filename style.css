@@ -1,6 +1,7 @@
 /* Commenting In CSS */
 /* Default styles */
 * {
+<<<<<<< HEAD
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -33,3 +34,7 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
 }
+=======
+    
+}
+>>>>>>> b9e9430e2bef81750d1eeb8cbe330b2cce58163c
