@@ -147,29 +147,42 @@ transform: translate(-50% , -50%);
 
 /* ABOUT US PAGE */
 .about-section {
-  max-width: 900px;
-  margin: 80px auto;
+  max-width: 1000px;
+  margin: 100px auto;
   padding: 0 20px;
-  color: #333;
+  color: var(--text-color);
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .about-section h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  color: var(--primary-color);
+  animation: fadeDown 1s ease-in-out;
 }
 
 .about-section h2 {
-  margin-top: 2rem;
-  font-size: 1.5rem;
-  color: #007bff;
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
 }
 
-.about-section p {
-  font-size: 1.1rem;
-  line-height: 1.6;
+.about-section p, .about-section ul {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  animation: fadeIn 1.5s ease;
+}
+.about-image {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-.about-section ul {
-  margin-top: 1rem;
-  padding-left: 1.2rem;
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+
