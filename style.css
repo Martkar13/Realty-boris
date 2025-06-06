@@ -1,11 +1,29 @@
 /* Commenting In CSS */
+:root {
+  --primary-color: #64b5f6;   /* light blue */
+  --secondary-color: #a5d6a7; /* light green */
+  --hover-color: #ff9800;     /* orange */
+  --text-color: #333;
+  --white: #fff;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #5e4d4d;
+  color: var(--text-color);
+  background-image: url('icons/back.jpg');
+  margin: 0;
+  padding: 0;
+}
+
 /* Default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f0e7e7;
@@ -13,7 +31,7 @@ body {
     background-image: url('icons/back.jpg');
     background-size: cover;
 }
-
+*/
 header {
     background-color: #222;
     color: white;
@@ -125,4 +143,83 @@ transform: translate(-50% , -50%);
         opacity: 1;
         transform: translate(-50%, -50%);
     }
+}
+
+/* ABOUT US PAGE */
+.about-section {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 0 20px;
+  color: var(--text-color);
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+  animation: fadeDown 1s ease-in-out;
+}
+
+.about-section h2 {
+  margin-top: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--secondary-color);
+}
+
+.about-section p, .about-section ul {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  animation: fadeIn 1.5s ease;
+}
+.about-image {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* about us  animation*/
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*CTA about*/
+.cta-button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.cta-button:hover {
+  background-color: var(--hover-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
