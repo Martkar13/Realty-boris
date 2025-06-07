@@ -19,8 +19,5 @@ header{
     align-items: center;
 }
 img {
-    height: 5cm;
-    width: 6cm;
-    display: flex;
-    flex-direction: row;
+    height: 5cm;width: 6cm;display: flex;flex-direction: row;
 }
