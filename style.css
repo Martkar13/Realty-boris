@@ -229,6 +229,7 @@ transform: translate(-50% , -50%);
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 /* PROPERIES STYLE*/
+
 .properties-section {
   max-width: 1200px;
   margin: 100px auto;
@@ -309,6 +310,18 @@ transform: translate(-50% , -50%);
 .cta-button:hover {
   background-color: var(--hover-color);
   transform: scale(1.05);
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: var(--hover-color);
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  font-weight: bold;
 }
 
 /* Animations for properties page */
