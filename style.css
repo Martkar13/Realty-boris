@@ -323,7 +323,6 @@ transform: translate(-50% , -50%);
   border-radius: 20px;
   font-weight: bold;
 }
-
 /* Animations for properties page */
 @keyframes fadeDown {
   from {
