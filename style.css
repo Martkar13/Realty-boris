@@ -346,12 +346,35 @@ transform: translate(-50% , -50%);
   }
 }
 /* footer stylling*/
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
+.site-footer {
+  background-color: #0b2e13;
   padding: 20px;
-  font-size: 15px;
-  width: 100%;
+  text-align: center;
 }
+
+.site-footer p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  background: linear-gradient(90deg, #00c853, #64dd17);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.github-link {
+  margin-left: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #a5d6a7;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.github-link:hover {
+  color: #c8e6c9;
+  border-bottom: 1px solid #81c784;
+}
+
 
